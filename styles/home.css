@@ -45,6 +45,7 @@ input{
 input, button, .button{
     width: 100%;
     margin-bottom: 1.8rem;
+    outline: none; /*Tira a borda preta envolta do input*/
 }
 
 /*Separator Line*/
