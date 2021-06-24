@@ -12,6 +12,8 @@ const server = express()
 // identificando ejs como view engine responsável
 server.set('view engine', 'ejs')
 
+server.use(express.static('public'))
+
 // mostrando o caminho do folder views para o express
 server.set('views', path.join(__dirname, 'views'))
 
