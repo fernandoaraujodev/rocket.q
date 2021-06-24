@@ -1,0 +1,24 @@
+{
+  "name": "rocket.q",
+  "version": "1.0.0",
+  "description": "Projeto para gerenciar perguntas anônimas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandoaraujodev/rocket.q.git"
+  },
+  "keywords": [],
+  "author": "Fernando Araujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandoaraujodev/rocket.q/issues"
+  },
+  "homepage": "https://github.com/fernandoaraujodev/rocket.q#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
