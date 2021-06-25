@@ -35,7 +35,7 @@
                 <!-- Buttons -->
                 <div class="buttons">
                     
-                    <div class="button outlined">
+                    <div class="button outlined" id="room-id" data-id="230621">
                         #230621
                         <img src="images/copy.svg" alt="copiar numero da sala">
                     </div>
@@ -90,12 +90,12 @@
                             <div class="actions">
 
                                 <!-- Marcar como lida -->
-                                <a class="check" href="#">
+                                <a class="check" href="#" data-id="2">
                                     <img src="images/check.svg" alt="Marcar como lida">Marcar como lida
                                 </a>
 
                                 <!-- Excluir -->
-                                <a class="delete" href="#">
+                                <a class="delete" href="#" data-id="2">
                                     <img src="images/trash.svg" alt="Excluir">Excluir
                                 </a>
                             </div>
@@ -116,12 +116,12 @@
                             <div class="actions">
 
                                 <!-- Marcar como lida -->
-                                <a class="check" href="#">
+                                <a class="check" href="#" data-id="3">
                                     <img src="images/check.svg" alt="Marcar como lida">Marcar como lida
                                 </a>
 
                                 <!-- Excluir -->
-                                <a class="delete" href="#">
+                                <a class="delete" href="#" data-id="3">
                                     <img src="images/trash.svg" alt="Excluir">Excluir
                                 </a>
                             </div>
@@ -145,12 +145,12 @@
                             <div class="actions">
 
                                 <!-- Marcar como lida -->
-                                <a class="check" href="#">
+                                <a class="check" href="#" data-id="4">
                                     <img src="images/check.svg" alt="Marcar como lida">Marcar como lida
                                 </a>
 
                                 <!-- Excluir -->
-                                <a class="delete" href="#">
+                                <a class="delete" href="#" data-id="4">
                                     <img src="images/trash.svg" alt="Excluir">Excluir
                                 </a>
                             </div>
@@ -171,7 +171,7 @@
                             <div class="actions">
 
                                 <!-- Excluir -->
-                                <a class="delete" href="#">
+                                <a class="delete" href="#" data-id="1">
                                     <img src="images/trash.svg" alt="Excluir">Excluir
                                 </a>
                             </div>
@@ -191,7 +191,7 @@
                 <h2>Excluir pergunta</h2>
                 <p>Tem certeza que você deseja excluir essa perguntar?</p>
                 
-                <form action="#">
+                <form action="#" method="POST">
                     <label class="sr-only" for-id="password">Digite sua senha de admin</label>
                     <input type="password" name="password" placeholder="Digite sua senha" id="password">
 
