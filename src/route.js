@@ -1,6 +1,9 @@
 // importando Express
 const express = require('express')
 
+//Controller
+const QuestionController = require('./controllers/QuestionController')
+
 // instanciando rotas
 const route = express.Router()
 
@@ -11,7 +14,7 @@ route.get('/create-password', (req, res) => res.render('create-password'))
 
 //('/room/{id-sala}/{id-pergunta}/ação') 
 //Formato que o formulário de dentro da modal passa as informações
-//route.post('/room/:room/:question/:action')
+route.post('/room/:room/:question/:action', QuestionController.index)
 
 // exportando route
 module.exports = route
