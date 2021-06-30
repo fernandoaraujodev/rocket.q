@@ -3,6 +3,7 @@ const express = require('express')
 
 //Controller
 const QuestionController = require('./controllers/QuestionController')
+const RoomController = require('./controllers/RoomController')
 
 // instanciando rotas
 const route = express.Router()
@@ -10,11 +11,13 @@ const route = express.Router()
 // pegando as rotas
 route.get('/', (req, res) => res.render('index', {page: 'enter-room'}))
 route.get('/create-password', (req, res) => res.render('index', {page: 'create-password'}))
-route.get('/room', (req, res) => res.render('room'))
+
+route.get('/room/:room', (req, res) => res.render('room'))
 
 //('/room/{id-sala}/{id-pergunta}/ação') 
 //Formato que o formulário de dentro da modal passa as informações
 route.post('/room/:room/:question/:action', QuestionController.index)
+route.post('/room/create-room', RoomController.create)
 
 // exportando route
 module.exports = route
