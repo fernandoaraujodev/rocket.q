@@ -1,3 +1,5 @@
+/*#region Geral*/
+
 *{
     margin: 0;
     padding: 0;
@@ -63,6 +65,8 @@ body, button, input, textarea{
     border-width: 0;
     
 }
+
+/*#endregion*/
 
 /*#region Button*/
 /* Input e buttons*/

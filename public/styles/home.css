@@ -69,7 +69,7 @@ input, button, .button{
     height: 1px;
 }
 
-/*Balls*/
+/*#region bgBalls*/
 .ball{
     width: 21.2rem;
     height: 21.2rem;
@@ -90,3 +90,4 @@ input, button, .button{
     bottom: -17rem;
     right: 5.6rem;
 }
+/*#endregion*/
