@@ -16,8 +16,8 @@ route.get('/room/:room', (req, res) => res.render('room'))
 
 //('/room/{id-sala}/{id-pergunta}/ação') 
 //Formato que o formulário de dentro da modal passa as informações
-route.post('/room/:room/:question/:action', QuestionController.index)
-route.post('/room/create-room', RoomController.create)
+route.post('/question/:room/:question/:action', QuestionController.index)
+route.post('/create-room', RoomController.create)
 
 // exportando route
 module.exports = route
