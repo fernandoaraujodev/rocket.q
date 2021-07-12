@@ -12,6 +12,11 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
+- JavaScript
+- NodeJS
+- EJS
+- Express
+- SQLite
 
 ## 🔖 Layout
 

@@ -20,3 +20,6 @@ const initDb = {
 }
 
 initDb.init();
+
+// comando para gerar novo db
+//npm run init-db 
