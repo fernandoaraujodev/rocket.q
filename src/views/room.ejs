@@ -75,6 +75,9 @@
 
                     <div class="questions">
                         
+                        <% if(isNoQuestions){ %>
+                            <%- include('parts/no-question') %>
+                        <% } %>    
                         <!-- Perguntas -->
                         <% questions.forEach(question => { %>
                             <div class="question-wrapper">
