@@ -15,6 +15,7 @@ route.get('/create-password', (req, res) => res.render('index', {page: 'create-p
 
 route.post('/create-room', RoomController.create)
 route.get('/room/:room', RoomController.open)
+route.post('/enterroom', RoomController.enter)
 
 
 //('/room/{id-sala}/{id-pergunta}/ação') 
