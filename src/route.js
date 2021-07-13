@@ -12,12 +12,15 @@ const route = express.Router()
 route.get('/', (req, res) => res.render('index', {page: 'enter-room'}))
 route.get('/create-password', (req, res) => res.render('index', {page: 'create-password'}))
 
+
+route.post('/create-room', RoomController.create)
 route.get('/room/:room', RoomController.open)
+
 
 //('/room/{id-sala}/{id-pergunta}/ação') 
 //Formato que o formulário de dentro da modal passa as informações
 route.post('/question/:room/:question/:action', QuestionController.index)
-route.post('/create-room', RoomController.create)
+route.post('/question/create/:room', QuestionController.create)
 
 // exportando route
 module.exports = route
